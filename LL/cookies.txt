@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+core-career-clone.lovable.app	TRUE	/	FALSE	1999999999	__cf_bm	r9J5E8N4uX9lbIvL_qvxh3iKooRX5dP7prVvUBYxA90-1785780507.3686492-1.0.1.1-FAf2Qe_ce2yj0zLnUbSHmaWdoaVmdVs_zGmqX94XCjubBcoRu1YpRfiwhSjgbLhl.U51nJvisQpe1C867IIRfJWjSA2lz4rpTBbMnQsM1UNdaW1to6FB7cdm4_uvBLxU
+lovable.app	TRUE	/	FALSE	1999999999	SameSite	None
+

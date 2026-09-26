@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bachtijor Nuraliev — Interaktiver Lebenslauf</title>
+  <meta name="description" content="BWL-Student mit Schwerpunkt Steuern, tätig im Rechnungswesen der QUARTERBACK Immobilien AG und iOS Developer mit Swift, SwiftUI und KI-Automatisierung.">
+  <meta name="author" content="BachtijorNuraliev">
+  <meta property="og:title" content="Bachtijor Nuraliev — Interaktiver Lebenslauf">
+  <meta property="og:description" content="BWL-Student mit Schwerpunkt Steuern, tätig im Rechnungswesen der QUARTERBACK Immobilien AG und iOS Developer mit Swift, SwiftUI und KI-Automatisierung.">
+  <meta property="og:type" content="profile">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bachtijor Nuraliev — Interaktiver Lebenslauf">
+  <meta name="twitter:description" content="Interaktiver Lebenslauf von Bachtijor Nuraliev: Accounting, Tax, Audit und iOS Development.">
+  <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Fallback: sichtbar auch wenn externes CSS/JS nicht lädt */
+    html, body { min-height: 100%; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      color: #0f172a;
+      background: #f8f9fc;
+    }
+    [data-theme="dark"] body {
+      color: #f1f5f9;
+      background: #070b14;
+    }
+    /* Lovable-Branding (Badge, Logo, Name) nie anzeigen */
+    [id*="lovable" i],
+    [class*="lovable" i],
+    [data-lovable],
+    iframe[src*="lovable" i],
+    a[href*="lovable.dev" i],
+    a[href*="gptengineer" i],
+    script[src*="lovable" i] {
+      display: none !important;
+      visibility: hidden !important;
+      pointer-events: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
+    }
+  </style>
+  <script>
+    (function () {
+      var t = localStorage.getItem("bn-theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+    (function () {
+      function removeLovable() {
+        document.querySelectorAll('[id*="lovable" i],[class*="lovable" i],[data-lovable],iframe[src*="lovable" i],a[href*="lovable.dev" i]').forEach(function (el) {
+          el.remove();
+        });
+      }
+      removeLovable();
+      document.addEventListener("DOMContentLoaded", removeLovable);
+      new MutationObserver(removeLovable).observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">B<span>N</span>.</a>
+
+      <nav class="nav-desktop" aria-label="Hauptnavigation">
+        <a href="#home" data-nav>Home</a>
+        <a href="#ueber-mich" data-nav>Über mich</a>
+        <a href="#berufserfahrung" data-nav>Berufserfahrung</a>
+        <a href="#studium" data-nav>Studium</a>
+        <a href="#kenntnisse" data-nav>Kenntnisse</a>
+        <a href="#projekte" data-nav>Projekte</a>
+        <a href="#zertifikate" data-nav>Zertifikate</a>
+        <a href="#kontakt" data-nav>Kontakt</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn--icon theme-toggle" type="button" aria-label="Farbschema wechseln">
+          <svg class="icon theme-icon theme-icon--moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+          <svg class="icon theme-icon theme-icon--sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a href="file:///C:/Users/User/Downloads/Lebenslauf_BN3.pdf" download class="btn btn--primary btn--sm">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>
+          CV herunterladen
+        </a>
+        <button class="btn btn--icon menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+    <a href="#home" data-nav>Home</a>
+    <a href="#ueber-mich" data-nav>Über mich</a>
+    <a href="#berufserfahrung" data-nav>Berufserfahrung</a>
+    <a href="#studium" data-nav>Studium</a>
+    <a href="#kenntnisse" data-nav>Kenntnisse</a>
+    <a href="#projekte" data-nav>Projekte</a>
+    <a href="#zertifikate" data-nav>Zertifikate</a>
+    <a href="#kontakt" data-nav>Kontakt</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-visual reveal">
+          <img src="assets/portrait-DXwS8Iqu.webp" alt="Portraitfoto von Bakhtiyor Nuraliev" width="480" height="600">
+        </div>
+        <div class="hero-content reveal reveal-delay-1">
+          <p class="eyebrow">Interaktiver Lebenslauf</p>
+          <h1 class="text-gradient">Bakhtiyor Nuraliev</h1>
+          <p class="hero-subtitle"> iOS Developer | AI-Engineering | Web Development | </p>
+          <div class="hero-text">
+            <p>Ich habe Betriebswirtschaftslehre mit Schwerpunkt Steuern und Informatik an der HTWK Leipzig studiert und arbeite derzeit im Rechnungswesen und IT bei der QUARTERBACK Immobilien AG.</p>
+            <p>Neben meinem Studium entwicklte ich zahlreiche moderne iOS-Apps mit Swift und beschäftige mich intensiv mit App-Entwicklung, Webentwicklung, Künstlicher Intelligenz und Prozessautomatisierung.</p>
+            <p>Mein langfristiges Ziel ist es, Technologie und Wirtschaft miteinander zu verbinden.</p>
+          </div>
+          <div class="hero-actions">
+            <a href="file:///C:/Users/User/Downloads/Lebenslauf_BN3.pdf" download class="btn btn--primary">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>
+              Lebenslauf herunterladen
+            </a>
+            <a href="#kontakt" class="btn btn--ghost">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              Kontakt aufnehmen
+            </a>
+            <a href="https://www.linkedin.com/in/bakhtiyor-nuraliev-leipzig/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Kennzahlen">
+      <div class="container stats-grid">
+        <div class="stat-card reveal">
+          <p class="stat-value" data-count="2" data-suffix="+">6+</p>
+          <p class="stat-label">Jahre Berufserfahrung</p>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <p class="stat-value" data-count="250" data-suffix="+">250+</p>
+          <p class="stat-label">Erstellte Jahresabschlüsse</p>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <p class="stat-value" data-count="15">15+</p>
+          <p class="stat-label">iOS App Projekte</p>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <p class="stat-value" data-count="10" data-suffix="+">6+</p>
+          <p class="stat-label">Technologien</p>
+        </div>
+        <div class="stat-card reveal">
+          <p class="stat-value" data-count="5">5</p>
+          <p class="stat-label">Sprachen</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="ueber-mich" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Über mich</p>
+          <h2 class="section-title text-gradient">Wirtschaft trifft Technologie</h2>
+        </header>
+        <div class="about-grid">
+          <img src="assets/office-BW8prAwL.webp" alt="Bakhtiyor Nuraliev im Büro" class="about-image reveal" loading="lazy" width="640" height="480">
+          <div class="reveal reveal-delay-1">
+            <div class="about-text">
+              <p>Ich verbinde fundierte Praxiserfahrung im App-Entwicklung, in der Steuerberatung und Wirtschaftsprüfung mit technischem Know-how in der Softwareentwicklung.</p>
+              <p>In den vergangenen Jahren war ich unter anderem im Rechnungswesen, der Erstellung und Prüfung von Jahresabschlüssen sowie im steuerlichen Umfeld tätig. Dabei arbeite ich routiniert mit digitalen Prozessen und modernen Softwarelösungen und lege großen Wert auf strukturierte, präzise und effiziente Arbeitsweisen</p>
+              <p>Parallel entwickle ich moderne iOS-Apps mit Swift sowie Webanwendungen und beschäftige mich intensiv mit künstlicher Intelligenz und Automatisierung.</p>
+              <p>Mein Fokus liegt darauf, betriebswirtschaftliche Expertise mit moderner Technologie zu verbinden und digitale Lösungen zu entwickeln, die Unternehmen einen messbaren Mehrwert bieten.</p>
+            </div>
+            <dl class="info-grid">
+              <div class="card info-item">
+                <dt>Geburtsdatum</dt>
+                <dd>auf Anfrage</dd>
+              </div>
+              <div class="card info-item">
+                <dt>Führerschein</dt>
+                <dd>Klasse B</dd>
+              </div>
+              <div class="card info-item">
+                <dt>Familienstand</dt>
+                <dd>Ledig</dd>
+              </div>
+              <div class="card info-item">
+                <dt>Wohnort</dt>
+                <dd>Leipzig</dd>
+				<dd>Berlin</dd>
+              </div>
+            </dl>
+            <a href="https://www.linkedin.com/in/bakhtiyor-nuraliev-leipzig/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost mt-6">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn Profil ansehen
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="berufserfahrung" class="section section--muted">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Berufserfahrung</p>
+          <h2 class="section-title text-gradient">Ein Werdegang zwischen Zahlen und Code</h2>
+          <p class="section-desc">Praxis in Rechnungswesen, Steuern und Wirtschaftsprüfung – parallel dazu Softwareentwicklung und Automatisierung.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <div class="timeline-meta">
+                <h3>Freiberuflicher iOS Developer</h3>
+                <span class="timeline-date">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+                  01.2020 – Heute
+                </span>
+              </div>
+              <p class="timeline-company">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg>
+                Selbstständig
+              </p>
+              <div class="tags">
+                <span class="tag">Entwicklung moderner iOS Apps</span>
+                <span class="tag">Swift</span><span class="tag">UIKit</span><span class="tag">SwiftUI</span>
+                <span class="tag">ARKit</span><span class="tag">CoreML</span><span class="tag">CoreData</span>
+                <span class="tag">REST APIs</span><span class="tag">UI/UX</span><span class="tag">Xcode</span>
+                <span class="tag">Debugging</span><span class="tag">App Store Veröffentlichung</span><span class="tag">Monetarisierung</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <div class="timeline-meta">
+                <h3>Rechnungswesen und Steuern</h3>
+                <span class="timeline-date">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+                  12.2023 – Heute
+                </span>
+              </div>
+              <p class="timeline-company">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"/></svg>
+                QUARTERBACK Immobilien AG
+              </p>
+              <div class="tags">
+                <span class="tag">Erstellung von Jahresabschlüssen</span>
+                <span class="tag">Finanzbuchhaltung</span><span class="tag">Kontenabstimmung</span>
+                <span class="tag">Kontenbereinigung</span><span class="tag">Kassenbuchführung</span>
+                <span class="tag">DATEV</span><span class="tag">Veröffentlichung von Jahresabschlüssen</span>
+                <span class="tag">Bearbeitung großer Datenbestände</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <div class="timeline-meta">
+                <h3>Freiberuflicher Full Stack Entwickler</h3>
+                <span class="timeline-date">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+                  10.2021 – Heute
+                </span>
+              </div>
+              <p class="timeline-company">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/></svg>
+                Selbstständig
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                <span class="tag">KI-Agenten</span><span class="tag">Automatisierungen</span>
+                <span class="tag">E-Mail Automatisierung</span><span class="tag">Meta Ads</span>
+                <span class="tag">LinkedIn Ads</span><span class="tag">Facebook Ads</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <div class="timeline-meta">
+                <h3>Werkstudent</h3>
+                <span class="timeline-date">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+                  07.2024 – 11.2024
+                </span>
+              </div>
+              <p class="timeline-company">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/></svg>
+                RVC Wirtschaftsprüfung GmbH
+              </p>
+              <div class="tags">
+                <span class="tag">Bilanzprüfung</span><span class="tag">GuV Prüfung</span><span class="tag">DATEV</span>
+                <span class="tag">Mandantenkontakt</span><span class="tag">Steuererklärungen</span><span class="tag">Anhangserstellung</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <article class="card timeline-card">
+              <div class="timeline-meta">
+                <h3>Praktikum</h3>
+                <span class="timeline-date">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+                  03.2024 – 06.2024
+                </span>
+              </div>
+              <p class="timeline-company">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/></svg>
+                RVC Wirtschaftsprüfung GmbH
+              </p>
+              <div class="tags">
+                <span class="tag">SAP</span><span class="tag">SAP HANA</span><span class="tag">Kontenprüfung</span>
+                <span class="tag">Prüferische Durchsicht</span><span class="tag">Bilanzanalyse</span>
+              </div>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="studium" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Studium</p>
+          <h2 class="section-title text-gradient">Akademischer Hintergrund</h2>
+        </header>
+        <div class="edu-grid">
+          <article class="card edu-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg class="icon icon--lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            </div>
+            <h3>HTWK Leipzig</h3>
+            <p>Bachelor of Arts – Betriebswirtschaftslehre</p>
+            <p>Schwerpunkt: Steuern</p>
+            <p class="edu-date">Seit Oktober 2022</p>
+          </article>
+          <article class="card edu-card reveal reveal-delay-1">
+            <div class="card-icon" aria-hidden="true">
+              <svg class="icon icon--lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            </div>
+            <h3>Studienkolleg – Martin-Luther-Universität Halle</h3>
+            <p>Abschluss: Abitur</p>
+            <p>Studienvorbereitung</p>
+            <span class="badge">abgeschlossen</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="kenntnisse" class="section section--muted">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Kenntnisse</p>
+          <h2 class="section-title text-gradient">Zwei Kompetenzfelder, ein Profil</h2>
+          <p class="section-desc">Fundiertes Fachwissen im Rechnungswesen kombiniert mit moderner Softwareentwicklung und KI.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card skills-card reveal">
+            <h3>Accounting, Tax &amp; Audit</h3>
+            <ul>
+              <li class="skill-row"><span>DATEV</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Accounting</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Excel</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>SAP / SAP HANA</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+              <li class="skill-row"><span>LucaNet</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+              <li class="skill-row"><span>VBA</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+              <li class="skill-row"><span>PowerPoint</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Word</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Audit Agent</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+            </ul>
+          </article>
+
+          <article class="card skills-card reveal reveal-delay-1">
+            <h3>Development &amp; AI</h3>
+            <ul>
+              <li class="skill-row"><span>Swift</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>SwiftUI</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>UIKit</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Xcode</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>CoreData</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+              <li class="skill-row"><span>CoreML</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+              <li class="skill-row"><span>ARKit</span><span class="skill-level skill-level--basic">Grundkenntnisse</span></li>
+              <li class="skill-row"><span>JavaScript</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+              <li class="skill-row"><span>HTML</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>CSS</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Python</span><span class="skill-level skill-level--advanced">Fortgeschritten</span></li>
+              <li class="skill-row"><span>Git</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>KI Automatisierung</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Google Ads</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>Meta Ads</span><span class="skill-level skill-level--expert">Experte</span></li>
+              <li class="skill-row"><span>LinkedIn Ads</span><span class="skill-level skill-level--expert">experte</span></li>
+            </ul>
+          </article>
+        </div>
+
+        <header class="section-header section-header--sub reveal">
+          <p class="eyebrow">Sprachen</p>
+          <h2 class="section-title text-gradient">Kommunikation auf fünf Ebenen</h2>
+        </header>
+        <div class="lang-grid">
+          <article class="card lang-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg>
+            </div>
+            <h4>Deutsch</h4>
+            <p>C1 / C2</p>
+          </article>
+          <article class="card lang-card reveal reveal-delay-1">
+            <div class="card-icon" aria-hidden="true">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg>
+            </div>
+            <h4>Englisch</h4>
+            <p>B2</p>
+          </article>
+          <article class="card lang-card reveal reveal-delay-2">
+            <div class="card-icon" aria-hidden="true">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg>
+            </div>
+            <h4>Russisch</h4>
+            <p>C2</p>
+          </article>
+          <article class="card lang-card reveal reveal-delay-3">
+            <div class="card-icon" aria-hidden="true">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg>
+            </div>
+            <h4>Tadschikisch</h4>
+            <p>C2</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projekte" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Projekte</p>
+          <h2 class="section-title text-gradient">Ausgewählte Arbeiten</h2>
+          <p class="section-desc">iOS Apps, Webseiten, KI-Agenten und Automatisierungen – weitere Projekte folgen laufend.</p>
+        </header>
+        <div class="project-grid">
+          <article class="card project-card reveal">
+            <img src="assets/project-ios-03duQznm.webp" alt="iOS App Projekte" loading="lazy" width="640" height="400">
+            <div class="project-body">
+              <h3>iOS App Projekte</h3>
+              <p>Native Apps mit SwiftUI, CoreData und CoreML – vom Konzept bis zur Veröffentlichung im App Store.</p>
+              <div class="tags">
+                <span class="tag">Swift</span><span class="tag">SwiftUI</span><span class="tag">CoreML</span><span class="tag">App Store</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">GitHub</a>
+                <a href="#kontakt" class="btn btn--ghost btn--sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project-card reveal reveal-delay-1">
+            <img src="assets/project-web-6ZuaCeTO.webp" alt="Webseiten und KI-Agenten" loading="lazy" width="640" height="400">
+            <div class="project-body">
+              <h3>Webseiten &amp; KI-Agenten</h3>
+              <p>Moderne Webauftritte sowie KI-gestützte Agenten und Automatisierungen für wiederkehrende Geschäftsprozesse.</p>
+              <div class="tags">
+                <span class="tag">JavaScript</span><span class="tag">KI-Agenten</span><span class="tag">Automatisierung</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm">GitHub</a>
+                <a href="#kontakt" class="btn btn--ghost btn--sm">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="zertifikate" class="section section--muted">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Zertifikate</p>
+          <h2 class="section-title text-gradient">Weiterbildung &amp; Nachweise</h2>
+          <p class="section-desc">Zertifikate von Udemy und weiteren Kursen werden hier laufend ergänzt.</p>
+        </header>
+        <article class="card cert-placeholder reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg class="icon icon--lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
+          </div>
+          <h3>Zertifikate folgen in Kürze</h3>
+          <p>Aktuelle Nachweise können jederzeit ergänzt werden – gerne sende ich sie Ihnen auf Anfrage direkt zu.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="kontakt" class="section">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2 class="section-title text-gradient">Lassen Sie uns sprechen</h2>
+          <p class="section-desc">Ich freue mich über Ihre Nachricht – ob Position, Projekt oder Austausch.</p>
+        </header>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="card form-card reveal" novalidate>
+            <div class="form-grid form-grid--2">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Ihr Name">
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="name@beispiel.de">
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-group form-group--spaced">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Worum geht es?"></textarea>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            <button type="submit" class="btn btn--primary form-submit">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+              Nachricht senden
+            </button>
+          </form>
+
+          <ul class="contact-links reveal reveal-delay-1">
+            <li>
+              <a href="mailto:nuraliev@yahoo.com" class="card contact-link">
+                <span class="card-icon" aria-hidden="true">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                </span>
+                nuraliev@yahoo.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+490000000000" class="card contact-link">
+                <span class="card-icon" aria-hidden="true">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                </span>
+                +49 1624 891443 (auch unter WhatsApp erreichbar)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/bakhtiyor-nuraliev" target="_blank" rel="noopener noreferrer" class="card contact-link">
+                <span class="card-icon" aria-hidden="true">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </span>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">B<span>N</span>.</a>
+          <p>Interaktiver Lebenslauf von Bakhtiyor Nuraliev – Wirtschaft, Steuern und moderne Softwareentwicklung aus Leipzig.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#ueber-mich">Über mich</a></li>
+            <li><a href="#berufserfahrung">Berufserfahrung</a></li>
+            <li><a href="#kenntnisse">Kenntnisse</a></li>
+            <li><a href="#projekte">Projekte</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <h4>Verbinden</h4>
+          <ul>
+            <li><a href="mailto:nuraliev@yahoo.com">E-Mail</a></li>
+            <li><a href="https://www.linkedin.com/in/bakhtiyor-nuraliev-leipzig/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="file:///C:/Users/User/Downloads/Lebenslauf_BN3.pdf" download>CV Download</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bakhtiyor Nuraliev. Alle Rechte vorbehalten.</p>
+        <a href="#home" class="back-to-top">
+          Nach oben
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
